@@ -26,13 +26,18 @@ button {
 	cursor: pointer;
 }
 
+/* header */
+header {
+	max-width: 1200px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 /* navbar */
 header nav {
 	display: flex;
 	gap: 16px;
 	justify-content: end;
-	max-width: 1200px;
-	margin: 0 auto;
 }
 header nav h1 {
 	margin-right: auto;
@@ -123,9 +128,32 @@ form label span {
 	color: #bbb;
 }
 /* careers details */
+.career-details {
+	background: rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	border-radius: 4px;
+	margin: 20px 0;
+}
 
 /* breadcrumbs */
-
+.breadcrumbs {
+	max-width: 1200px;
+	margin: 20px auto;
+}
+.breadcrumbs > * {
+	display: inline-block;
+	margin-right: 10px;
+}
+.breadcrumbs .crumb:after {
+	content: ">";
+	margin-left: 10px;
+}
+.breadcrumbs .crumb:last-child:after {
+	display: none;
+}
+.breadcrumbs .crumb a {
+	color: #ddd;
+}
 /*not found*/
 .not-found {
 	text-align: center;
